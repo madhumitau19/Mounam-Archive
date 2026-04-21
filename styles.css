@@ -1,0 +1,89 @@
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AmericanType";
+  src:
+    url("American-Typewriter-Regular.ttf") format("truetype") 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: "AmericanType";
+    color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enter{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+#enter:hover{
+    color: rgb(159, 106, 7);
+    cursor: pointer;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro.hide{
+    display: none;
+}
+
+#paper{
+    width: 560px;
+    max-height: 100vh;
+}
+
+#intro-text{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+#intro-text p{
+    width: 460px;
+    text-align: center;
+    color: black;
+}
+
+#main{
+
+}
+
+#main.hide{
+    display: none;
+}
+
+#menu{
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    line-height: 5px;
+}
+
+#system{
+    text-decoration: underline;
+}
+
+#scores{
+   color:rgb(160, 160, 160) 
+}
+#scores:hover{
+    color: rgb(159, 106, 7);
+    text-decoration: underline;
+}
