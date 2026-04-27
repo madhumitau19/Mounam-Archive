@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Score Archive</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section id="main">
+            <div id="menu">
+                <p id="system-unselected"><a href="index.html">Understanding the System</a></p>
+                <p id="scores-selected">Score Archive</p>
+                <!-- <div id="lang-btns">
+                    <p id="english-btn">English</p>
+                    <p id="mounam-btn">Mounam</p>
+                </div> -->
+            </div>
+            <div id="content-2">
+                <div class="score">
+                    <div class="score-img">
+                        <img src="CoreScript.png">
+                    </div>
+                    <div class="score-info">
+                        <em>Mounam: The Original Script</em>
+                        <br>
+                        Unknown 
+                        <br><br>
+                        "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z. Comma is , question is ? period is . This score is the coded language of Mounam. An effort to resist this regime that breaks us apart from one another. Begin here. Play these sounds repeatedly to learn them and recognize them in each others music. We must restore communication. Goodbye."
+                        <br><br>
+                        <audio id="myAudio">
+                            <source src="MainScriptMounam-Audio.mp3" type="audio/mpeg">
+                        </audio>
+                        <img class="score-play" src="PlayBtn.svg" onclick="playAudio1()">   
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="score-img">
+                        <img src="LoveLetter.png">
+                    </div>
+                    <div class="score-info">
+                        <em>Love Letter: Dane to Amara</em>
+                        <br>
+                        Dane Redwood
+                        <br><br>
+                        "Dear Amara, this silence, not being able to tell you how I feel, how I love you, how I miss you, how I long to hold you, it is almost impossible to continue, but I do so for you. If not to see you and hear your voice, then to imagine you, the things we would say to each other. We must believe that even now we can build something, something beyond fear, beyond this oppression. That we still can feel this love, know this truth without even saying a word of it, it is reason enough to hope. I love you. I love you. Dane"
+                        <br><br>
+                        
+                        <img class="score-play" src="PlayBtn.svg" onclick="playAudio()"> 
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="score-img">
+                        <img src="Bill.png">
+                    </div>
+                    <div class="score-info">
+                        <em>Note to Meet</em>
+                        <br>
+                        Unknown 
+                        <br><br>
+                        "Meet me at five Stuy Cove today."
+                        <br><br>
+                        <img class="score-play" src="PlayBtn.svg"> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

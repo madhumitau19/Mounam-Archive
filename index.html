@@ -10,10 +10,9 @@
     </head>
     <body>
         <section id="intro">
-            <img id="paper" src="09.jpg">
+            <!-- <img id="paper" src="09.jpg"> -->
             <div id="intro-text">
-                <p>The Music of Mounam</p>
-                <br>
+                <p class="gold">The Music of Mounam</p>
                 <p>
                     The Mounam Empire’s reign was a dark time for all- a time of extreme censorship, surveillance and cultural loss; a time of silence.
                     <br>
@@ -23,7 +22,15 @@
                     <br>
                     In the absence of speech, true connection and communication, musicians filled the gaps with their craft, and in the process of producing this coded form of communication, created one of the most distinctive and enigmatic eras of music.This is an archive intended to preserve the music and documents of the period and honor the musicians who were instrumental in bringing us hope when we needed it the most, and eventually returning us to freedom and normalcy.
                 </p>
-                <br>
+                <p class="mounam">
+                    The Mounam Empire’s reign was a dark time for all- a time of extreme censorship, surveillance and cultural loss; a time of silence.
+                    <br>
+                    <br>
+                    But in the wake of such cruelty and unprecedented abuse of power, we as a people persevered- through the only means still accessible: music.
+                    <br>
+                    <br>
+                    In the absence of speech, true connection and communication, musicians filled the gaps with their craft, and in the process of producing this coded form of communication, created one of the most distinctive and enigmatic eras of music.This is an archive intended to preserve the music and documents of the period and honor the musicians who were instrumental in bringing us hope when we needed it the most, and eventually returning us to freedom and normalcy.
+                </p>
                 <p id="enter">Enter Archive</p>
             </div>
         </section>
@@ -31,7 +38,183 @@
         <section id="main">
             <div id="menu">
                 <p id="system">Understanding the System</p>
-                <p id="scores">Score Archive</p>
+                <p id="scores"><a href="archive.html">Score Archive</a></p>
+                <!-- <div id="lang-btns">
+                    <p id="english-btn">English</p>
+                    <p id="mounam-btn">Mounam</p>
+                </div> -->
+            </div>
+            <div id="content-1">
+                <div id="content-1-left">
+                    <div id="main-script-front">
+                        <img src="MainScript-Front.png">
+                    </div>
+                    <div class="content-1-text">
+                        The earliest use of the Mounam script was in this piece of music, the author/composer of which is unknown. Upon translation, this document has been identified as the potential creation of the script.
+                        <br><br>
+                        Directly translated, the music reads as:
+                        <br><br>
+                        <em>
+                        "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z. Comma is , question is ? period is . This score is the coded language of Mounam. An effort to resist this regime that breaks us apart from one another. Begin here. Play these sounds repeatedly to learn them and recognize them in each others music. We must restore communication. Goodbye."
+                        </em>
+                    </div>
+                    <div id="main-script-back">
+                        <img src="MainScript-Back.png">
+                    </div>
+                    <div class="content-1-text">
+                        This document now serves as the best introduction to the script and system. It clearly lays out the alphabet and basic punctuation, acting as great source for beginners to learn.
+                        <br><br>
+                        Historians assume that the very first propagation of this system would have been in secret, needing to involve illegal verbal communication. But this later allowed so many to finally express themselves to each other, and communicate information, eventually leading to freedom and the collapse of the empire.
+                        <br><br>
+                        The document, now titled "Mounam: The Original Script", is preserved in the archives of the Mounam Historical Society in New York City.
+                    </div>
+                </div>
+                <div id="content-1-right">
+                    <div id="alphabet">
+                        <div class="letter">
+                            A
+                            <audio id="A" src="../Mounam-Archive/Letter-Sounds/A.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('A'); a.paused ? a.play() : a.pause()">
+                                <img src="PlayBtn.svg"> 
+                            </div>
+                            <div class="mounam-letter">A</div>
+                        </div>
+                        <div class="letter">B
+                            <audio id="b" src="../Mounam-Archive/Letter-Sounds/B.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('B'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">B</div>
+                        </div>
+                        <div class="letter">C
+                            <audio id="C" src="../Mounam-Archive/Letter-Sounds/C.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('C'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">C</div>
+                        </div>
+                        <div class="letter">D
+                            <audio id="D" src="../Mounam-Archive/Letter-Sounds/D.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('D'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">D</div>
+                        </div>
+                        <div class="letter">E
+                            <audio id="E" src="../Mounam-Archive/Letter-Sounds/E.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('E'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">E</div>
+                        </div>
+                        <div class="letter">F
+                            <audio id="F" src="../Mounam-Archive/Letter-Sounds/F.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('F'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">F</div>
+                        </div>
+                        <div class="letter">G
+                            <audio id="G" src="../Mounam-Archive/Letter-Sounds/G.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('G'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">G</div>
+                        </div>
+                        <div class="letter">H
+                            <audio id="H" src="../Mounam-Archive/Letter-Sounds/H.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('H'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">H</div>
+                        </div>
+                        <div class="letter">I
+                            <audio id="I" src="../Mounam-Archive/Letter-Sounds/I.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('I'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">I</div>
+                        </div>
+                        <div class="letter">J
+                            <audio id="J" src="../Mounam-Archive/Letter-Sounds/J.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('J'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">J</div>
+                        </div>
+                        <div class="letter">K
+                            <audio id="K" src="../Mounam-Archive/Letter-Sounds/K.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('K'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">K</div>
+                        </div>
+                        <div class="letter">L
+                            <audio id="L" src="../Mounam-Archive/Letter-Sounds/L.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('L'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">L</div>
+                        </div>
+                        <div class="letter">M
+                            <audio id="M" src="../Mounam-Archive/Letter-Sounds/M.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('M'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">M</div>
+                        </div>
+                        <div class="letter">N
+                            <audio id="N" src="../Mounam-Archive/Letter-Sounds/N.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('N'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">N</div>
+                        </div>
+                        <div class="letter">O
+                            <audio id="O" src="../Mounam-Archive/Letter-Sounds/O.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('O'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">O</div>
+                        </div>
+                        <div class="letter">P
+                            <audio id="P" src="../Mounam-Archive/Letter-Sounds/P.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('P'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">P</div>
+                        </div>
+                        <div class="letter">Q
+                            <audio id="Q" src="../Mounam-Archive/Letter-Sounds/Q.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('Q'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">Q</div>
+                        </div>
+                        <div class="letter">R
+                            <audio id="R" src="../Mounam-Archive/Letter-Sounds/R.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('R'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">R</div>
+                        </div>
+                        <div class="letter">S
+                            <audio id="S" src="../Mounam-Archive/Letter-Sounds/S.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('S'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">S</div>
+                        </div>
+                        <div class="letter">T
+                            <audio id="T" src="../Mounam-Archive/Letter-Sounds/T.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('T'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">T</div>
+                        </div>
+                        <div class="letter">U
+                            <audio id="U" src="../Mounam-Archive/Letter-Sounds/U.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('U'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">U</div>
+                        </div>
+                        <div class="letter">V
+                            <audio id="V" src="../Mounam-Archive/Letter-Sounds/V.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('V'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">V</div>
+                        </div>
+                        <div class="letter">W
+                            <audio id="W" src="../Mounam-Archive/Letter-Sounds/W.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('W'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">W</div>
+                        </div>
+                        <div class="letter">X
+                            <audio id="X" src="../Mounam-Archive/Letter-Sounds/X.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('X'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">X</div>
+                        </div>
+                        <div class="letter">Y
+                            <audio id="Y" src="../Mounam-Archive/Letter-Sounds/Y.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('Y'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">Y</div>
+                        </div>
+                        <div class="letter">Z
+                            <audio id="Z" src="../Mounam-Archive/Letter-Sounds/Z.mp3"></audio>
+                            <div class="play-letter" onclick="let a = document.getElementById('Z'); a.paused ? a.play() : a.pause()"><img src="PlayBtn.svg"></div>
+                            <div class="mounam-letter">Z</div>
+                        </div>
+                        <div class="letter">.
+                            <div class="mounam-letter">.</div>
+                        </div>
+                        <div class="letter">,
+                            <div class="mounam-letter">,</div>
+                        </div>
+                        <div class="letter">?
+                            <div class="mounam-letter">?</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         

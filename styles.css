@@ -9,6 +9,11 @@
   src:
     url("American-Typewriter-Regular.ttf") format("truetype") 
 }
+@font-face {
+  font-family: "Mounam";
+  src:
+    url("Mounam_digital-Regular.ttf") format("truetype") 
+}
 
 body{
     width: 100vw;
@@ -21,13 +26,18 @@ body{
     align-items: center;
 }
 
+a{
+    all: unset;
+}
+
 #enter{
     text-decoration:underline;
     cursor: pointer;
+    color: #BB7E38;
 }
 
 #enter:hover{
-    color: rgb(159, 106, 7);
+    color: rgb(223, 223, 223);
     cursor: pointer;
 }
 
@@ -35,6 +45,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 #intro.hide{
@@ -55,10 +67,17 @@ body{
     align-items: center;
     justify-content: center; 
 }
-#intro-text p{
+#intro-text{
     width: 460px;
     text-align: center;
-    color: black;
+    color: rgb(223, 223, 223);
+}
+.mounam{
+    font-family: "Mounam";
+    font-size: 20px; 
+}
+.gold{
+    color: #BB7E38;
 }
 
 #main{
@@ -74,16 +93,146 @@ body{
     top: 20px;
     left: 30px;
     line-height: 5px;
+    height: calc(100vh - 30px);
+    width: calc(25vw - 60px);
 }
 
-#system{
+#system, #scores-selected{
     text-decoration: underline;
 }
-
-#scores{
-   color:rgb(160, 160, 160) 
+#scores, #system-unselected{
+   color:rgb(160, 160, 160); 
 }
-#scores:hover{
+#scores:hover,  #system-unselected:hover{
     color: rgb(159, 106, 7);
     text-decoration: underline;
+}
+#lang-btns{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#content-1, #content-2{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: calc(75vw - 30px);
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+#content-1-left{
+    width: 40%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+#content-1-left::-webkit-scrollbar{
+    display: none;
+}
+#content-1-right{
+    width: calc(60% - 30px);
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+#content-1-right::-webkit-scrollbar{
+    display: none;
+}
+
+#main-script-front, #main-script-back{
+    width: 100%;
+}
+#main-script-front img, #main-script-back img{
+    width: 100%;
+}
+.content-1-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+em{
+    color:rgb(159, 106, 7);
+}
+
+#alphabet{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    height: fit-content;
+    color:rgb(159, 106, 7); 
+}
+.letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.mounam-letter{
+    font-family: "Mounam";
+    font-size: 30px;
+}
+.play-letter{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.play-letter:hover{
+    transform: scale(120%);
+}
+.play-letter img{
+    width: 100%;
+}
+
+#content-2{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: calc(75vw - 30px);
+    justify-content: space-between;
+    height: 100vh;
+    display: block;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+}
+#content-2::-webkit-scrollbar{
+    display: none;
+}
+.score{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 13px;
+    border-bottom: solid 1px rgb(159, 106, 7);
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+.score-img{
+    width: 50%;
+    object-fit: cover;
+}
+.score-img img{
+    width: 100%;
+}
+.score-info{
+    height: 95%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.score-play{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.score-play:hover{
+    transform: scale(120%);
 }
