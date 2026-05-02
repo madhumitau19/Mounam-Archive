@@ -30,10 +30,8 @@
                         <br><br>
                         "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z. Comma is , question is ? period is . This score is the coded language of Mounam. An effort to resist this regime that breaks us apart from one another. Begin here. Play these sounds repeatedly to learn them and recognize them in each others music. We must restore communication. Goodbye."
                         <br><br>
-                        <audio id="myAudio">
-                            <source src="MainScriptMounam-Audio.mp3" type="audio/mpeg">
-                        </audio>
-                        <img class="score-play" src="PlayBtn.svg" onclick="playAudio1()">   
+                        <audio id="score1" src="MainScriptMounam-Audio.mp3"></audio>
+                        <img id="btn-score1" class="score-play" src="PlayBtn.svg" onclick="playLetter('score1', this.parentElement)">   
                     </div>
                 </div>
                 <div class="score">
@@ -47,8 +45,8 @@
                         <br><br>
                         "Dear Amara, this silence, not being able to tell you how I feel, how I love you, how I miss you, how I long to hold you, it is almost impossible to continue, but I do so for you. If not to see you and hear your voice, then to imagine you, the things we would say to each other. We must believe that even now we can build something, something beyond fear, beyond this oppression. That we still can feel this love, know this truth without even saying a word of it, it is reason enough to hope. I love you. I love you. Dane"
                         <br><br>
-                        
-                        <img class="score-play" src="PlayBtn.svg" onclick="playAudio()"> 
+                        <audio id="score2" src="LoveLetter.mp3"></audio>
+                        <img id="btn-score2" class="score-play" src="PlayBtn.svg" onclick="playLetter('score2', this.parentElement)">
                     </div>
                 </div>
                 <div class="score">
@@ -62,7 +60,8 @@
                         <br><br>
                         "Meet me at five Stuy Cove today."
                         <br><br>
-                        <img class="score-play" src="PlayBtn.svg"> 
+                        <audio id="score3" src="NoteToMeet.mp3"></audio>
+                        <img id="btn-score3" class="score-play" src="PlayBtn.svg" onclick="playLetter('score3', this.parentElement)">
                     </div>
                 </div>
             </div>
